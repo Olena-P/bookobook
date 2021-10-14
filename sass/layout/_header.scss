@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-left: 165px;
+  padding-right: 165px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0px;
+
+  position: static;
+  width: 418px;
+}
+
+.menu-item {
+  font-size: 18px;
+  line-height: 27px;
+  color: #333399;
+}
