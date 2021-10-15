@@ -1,59 +1,101 @@
-span {
-  color: #00cc99;
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  span {
+    color: #00cc99;
+  }
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .text-top {
+    margin-top: 8px;
+  }
+
+  .title-bottom {
+    margin-bottom: 20px;
+  }
+
+  /* TITLE */
+  .title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #000099;
+  }
+
+  .description {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #333399;
+  }
+
+  /* about */
+  .about-title {
+    font-weight: bold;
+    font-size: 12px;
+    color: #000099;
+  }
+
+  .about-description {
+    font-size: 12px;
+    line-height: 16px;
+    color: #333399;
+    width: 275px;
+  }
 }
 
-/* button {
-  background: #00cc99;
-  border: none;
-  border-radius: 13px;
-  padding: 16px 24px;
+@media screen and (min-width: 1200px) {
+  span {
+    color: #00cc99;
+  }
 
-  font-size: 20px;
-  line-height: 30px;
-  color: #ffffff;
-} */
+  .container {
+    padding-left: 165px;
+    padding-right: 165px;
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
 
-.container {
-  padding-left: 165px;
-  padding-right: 165px;
-  padding-top: 160px;
-  padding-bottom: 160px;
-}
+  .text-top {
+    margin-top: 28px;
+  }
 
-.text-top {
-  margin-top: 28px;
-}
+  .title-bottom {
+    margin-bottom: 56px;
+  }
 
-.title-bottom {
-  margin-bottom: 56px;
-}
+  /* TITLE */
+  .title {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    color: #000099;
+  }
 
-/* TITLE */
-.title {
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 60px;
-  text-align: center;
-  color: #000099;
-}
+  .description {
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #333399;
+  }
 
-.description {
-  font-size: 18px;
-  line-height: 27px;
-  text-align: center;
-  color: #333399;
-}
+  /* about */
+  .about-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000099;
+  }
 
-/* about */
-.about-title {
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 36px;
-  color: #000099;
-}
-
-.about-description {
-  font-size: 18px;
-  line-height: 27px;
-  color: #333399;
+  .about-description {
+    font-size: 18px;
+    line-height: 27px;
+    color: #333399;
+  }
 }

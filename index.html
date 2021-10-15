@@ -8,25 +8,26 @@
 
     <link rel="stylesheet" href="./sass/main.css">
 
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
-
-    <!-- bootstrap -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script> -->
 </head>
 <body>
     <header class="header">
         <a class="" href="">
             <img class="logo" src="./images/logo/logo-header.png" alt="БОК о БОК" width="145">
         </a>
-        <ul class="menu">
-            <li class="menu-item"><a href="" class="link">Преимущества</a></li>
-            <li class="menu-item"><a href="" class="link">Шаги продвижения</a></li>
-            <li class="menu-item"><a href="" class="link">Цена</a></li>
-        </ul>
+        <div class="burger-menu is-hidden">
+            <button type="button" class="menu-button " aria-expanded="false" aria-controls="menu-container" data-menu-button>
+                <span class="iconify icon-menu" width="60" height="60" aria-label="переключатель мобильного меню" data-icon="line-md:menu-unfold-left"></span>
+
+                <span class="iconify icon-cross " width="60" height="60" aria-label="переключатель мобильного меню" data-icon="line-md:close"></span>
+            </button>
+            <div class="menu menu-container" id="menu-container" data-menu>
+                <ul class="menu" >
+                    <li class="menu-item"><a href="" class="link">Преимущества</a></li>
+                    <li class="menu-item"><a href="" class="link">Шаги продвижения</a></li>
+                    <li class="menu-item"><a href="" class="link">Цена</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
      
     <main>
@@ -45,28 +46,28 @@
                 <h2 class="title about">Что дает профиль компании на платформе <span>БОК о БОК</span> <br>владельцам бизнеса?</h2>
                 <ul class="benefits-list">
                     <li class="benefits-item">
-                        <svg width="60px" height="60px">
+                        <svg class="benefits-icon" width="60px" height="60px">
                             <use xlink:href="./svg/symbol-defs.svg#icon-stats"></use>
                         </svg>
-                        <p class="about-description text-top">Повышение рейтинга компании среди конкурентов в онлайне</p>
+                        <p class="benefits-description about-description text-top">Повышение рейтинга компании среди конкурентов в онлайне</p>
                     </li>
                     <li class="benefits-item">
-                        <svg width="60px" height="60px">
+                        <svg class="benefits-icon" width="60px" height="60px">
                             <use xlink:href="./svg/symbol-defs.svg#icon-pie-chart"></use>
                         </svg>
-                        <p class="about-description text-top">Оптимизацию работы с лидерами мнений и негативными отзывами</p>
+                        <p class="benefits-description about-description text-top">Оптимизацию работы с лидерами мнений и негативными отзывами</p>
                     </li>
                     <li class="benefits-item">
-                        <svg width="60px" height="60px">
+                        <svg class="benefits-icon" width="60px" height="60px">
                             <use xlink:href="./svg/symbol-defs.svg#icon-scale"></use>
                         </svg>
-                        <p class="about-description text-top">Увеличение уровня доверия среди реальных и потенциальных клиентов</p>
+                        <p class="benefits-description about-description text-top">Увеличение уровня доверия среди реальных и потенциальных клиентов</p>
                     </li>
                     <li class="benefits-item">
-                        <svg width="60px" height="60px">
+                        <svg class="benefits-icon" width="60px" height="60px">
                             <use xlink:href="./svg/symbol-defs.svg#icon-star"></use>
                         </svg>
-                        <p class="about-description text-top">Расширение рынка сбыта продукции или зоны предоставления услуг</p>
+                        <p class="benefits-description about-description text-top">Расширение рынка сбыта продукции или зоны предоставления услуг</p>
                     </li>
                 </ul>
             </div>
@@ -94,18 +95,18 @@
                     <ul class="steps-list">
                         <li class="steps-item">
                             <h3 class="about-title steps-about">Создайте профиль компании</h3>
-                            <p class="about-description text-top">Функционал платформы позволяет не только подробно рассказывать о своем торговом предложении, но и обрабатывать запросы потенциальных клиентов. Создание профиля абсолютно бесплатно и не требует больших временных затрат</p>
+                            <p class="steps-item-description about-description text-top">Функционал платформы позволяет не только подробно рассказывать о своем торговом предложении, но и обрабатывать запросы потенциальных клиентов. Создание профиля абсолютно бесплатно и не требует больших временных затрат</p>
                         </li>
                         <li class="steps-item">
                             <h3 class="about-title steps-about">Работайте с мнениями аудитории</h3>
-                            <p class="about-description text-top">Так как ресурс БОК о БОК аккумулирует отзывы о любом потребительском
+                            <p class="steps-item-description about-description text-top">Так как ресурс БОК о БОК аккумулирует отзывы о любом потребительском
                                 опыте в одном
                                 месте, у вас есть уникальная
                                 возможность работать с мнением своей аудитории, не выходя за пределы площадки</p>
                         </li>
                         <li class="steps-item">
                             <h3 class="about-title steps-about">Используйте преимущество рекламы</h3>
-                            <p class="about-description text-top">Каждый день ресурс БОК о БОК собирает множество пользователей, которые
+                            <p class="steps-item-description about-description text-top">Каждый день ресурс БОК о БОК собирает множество пользователей, которые
                                 хотят узнать
                                 больше о том или ином продукте.
                                 Распространение информации о себе в такой среде помогает бизнесу быстро привлекать новых клиентов</p>
@@ -128,32 +129,32 @@
                 
                 <ul class="cards-list">
                     <li class="cards-item">
-                        <svg width="50px" height="50px">
+                        <svg class="cards-icon" width="50px" height="50px">
                             <use xlink:href="./svg/symbol-defs.svg#icon-rating"></use>
                         </svg>
                         <h3 class="about-title">Инициирование обратной связи с клиентом</h3>
-                        <p class="about-description text-top">Любой пользователь, оставляя мнение о товаре или сервисе, рассчитывает на
+                        <p class="card-list-description about-description text-top">Любой пользователь, оставляя мнение о товаре или сервисе, рассчитывает на
                             ту или иную реакцию компании. Грамотная работа
                             с отзывами позволяет улучшить потребительский опыт клиента и, как следствие, повысить уровень доверия
                             бизнесу</p>
                     </li>
                     <li class="cards-item">
-                        <svg width="50px" height="50px">
+                        <svg class="cards-icon" width="50px" height="50px">
                             <use xlink:href="./svg/symbol-defs.svg#icon-good-review-1"></use>
                         </svg>
                         <h3 class="about-title">Актуализация пользовательского опыта</h3>
-                        <p class="about-description text-top">Партнерский аккаунт в рамках платформы дает не только возможность общаться
+                        <p class="card-list-description about-description text-top">Партнерский аккаунт в рамках платформы дает не только возможность общаться
                             со своими клиентами напрямую, но и
                             модерировать поступающие отзывы. Данная опция сокращает поток необоснованного недовольства клиентов и
                             акцентирует
                             внимание аудитории на положительном опыте реальных пользователей</p>
                     </li>
                     <li class="cards-item">
-                        <svg width="50px" height="50px">
+                        <svg class="cards-icon" width="50px" height="50px">
                             <use xlink:href="./svg/symbol-defs.svg#icon-megaphone"></use>
                         </svg>
                         <h3 class="about-title">Продвижение бренда внутри платформы</h3>
-                        <p class="about-description text-top">Внутренняя реклама позволяет владельцем бизнеса находить новых клиентов и
+                        <p class="card-list-description about-description text-top">Внутренняя реклама позволяет владельцем бизнеса находить новых клиентов и
                             партнеров непосредственно на самой платформе.
                             Показы происходят не только на страницах со схожей тематикой, но и захватывают смежные отрасли</p>
                     </li>
@@ -217,7 +218,7 @@
             <div class="container">
                 <div class="package-about-info">
                     <h2 class="title title-bottom">Выберите тарифный план для эффективного <br>продвижения в сети</h2>
-                    <p class="description">Набор маркетинговых бизнес-инструментов позволит настроить <br>оптимальную стратегию
+                    <p class="package-description description">Набор маркетинговых бизнес-инструментов позволит настроить <br>оптимальную стратегию
                         раскрутки компании внутри платформы</p>
                 </div>
                 
@@ -350,14 +351,14 @@
         
             <div>
                 <ul class="social-list">
-                    <li>
+                    <li class="social-icon">
                         <a href="">
                             <svg width="20px" height="20px">
                                 <use xlink:href="./svg/symbol-defs.svg#icon-social-2"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
+                    <li class="social-icon">
                         <a href="">
                             <svg width="20px" height="20px">
                                 <use xlink:href="./svg/symbol-defs.svg#icon-social-1"></use>
@@ -376,9 +377,15 @@
         </div>
         
         <div class="footer-rules">
-            <a href="">Правила использования</a> <a href="">Политика конфиденциальности</a>
+            <p><a href="">Правила использования</a></p> 
+            <p><a href="">Политика конфиденциальности</a></p>
         </div>
     </footer>
+
+    <script src="./index.js"></script>
+
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
     
 </body>
 </html>

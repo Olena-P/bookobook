@@ -1,54 +1,112 @@
-.steps-container {
-  display: flex;
-  justify-content: space-between;
-  width: 910px;
-  margin-top: 120px;
-  margin-bottom: 120px;
-  margin-left: auto;
-  margin-right: auto;
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .steps-container {
+    display: flex;
+    justify-content: space-between;
+    // width: 279px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    // margin-left: auto;
+    // margin-right: auto;
+  }
+
+  .steps-list {
+    width: 210px;
+  }
+
+  .steps-item {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+
+  .steps-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .steps-number {
+    font-weight: 850;
+    font-size: 40px;
+    color: #00cc99;
+    margin-bottom: 120px;
+  }
+
+  .number-decoration {
+    position: relative;
+  }
+
+  .number-decoration:after {
+    content: "";
+    position: absolute;
+    top: 110px;
+    left: -25px;
+    transform: rotate(-90deg);
+    z-index: 1;
+    outline: 5px solid #f5f9ff;
+    width: 92px;
+  }
+
+  .steps-item-description {
+    width: 200px;
+  }
+
+  .steps-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-.steps-list {
-  width: 796px;
-}
+@media screen and (min-width: 1200px) {
+  .steps-container {
+    display: flex;
+    justify-content: space-between;
+    width: 910px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .steps-list {
+    width: 796px;
+  }
 
-.steps-about {
-  margin-bottom: 16px;
-}
+  .steps-about {
+    margin-bottom: 16px;
+  }
 
-.steps-item {
-  margin-bottom: 80px;
-}
+  .steps-item {
+    margin-bottom: 80px;
+  }
 
-.steps-item:last-child {
-  margin-bottom: 0;
-}
+  .steps-item:last-child {
+    margin-bottom: 0;
+  }
 
-.steps-number {
-  font-weight: 850;
-  font-size: 58px;
-  line-height: 79px;
-  color: #00cc99;
-  margin-bottom: 134px;
-}
+  .steps-number {
+    font-weight: 850;
+    font-size: 58px;
+    line-height: 79px;
+    color: #00cc99;
+    margin-bottom: 134px;
+  }
 
-.number-decoration {
-  position: relative;
-}
+  .number-decoration {
+    position: relative;
+  }
 
-.number-decoration:after {
-  content: "";
-  position: absolute;
-  top: 150px;
-  left: -18px;
-  transform: rotate(-90deg);
-  z-index: 1;
-  outline: 8px solid #f5f9ff;
-  width: 92px;
-}
+  .number-decoration:after {
+    content: "";
+    position: absolute;
+    top: 150px;
+    left: -18px;
+    transform: rotate(-90deg);
+    z-index: 1;
+    outline: 8px solid #f5f9ff;
+    width: 92px;
+  }
 
-.steps-button {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  .steps-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
