@@ -409,6 +409,9 @@ button {
     margin-bottom: 8px;
   }
   .social-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -423,9 +426,6 @@ button {
     color: #333399;
   }
   .footer-logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     margin-left: auto;
     margin-right: auto;
   }
