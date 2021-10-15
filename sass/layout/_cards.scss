@@ -19,8 +19,6 @@
   }
 
   .cards-list {
-    justify-content: space-between;
-    align-items: flex-start;
     margin-top: 20px;
   }
 
@@ -36,6 +34,9 @@
     width: 275px;
     padding: 20px;
     margin-top: 20px;
+
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .card-list-description {

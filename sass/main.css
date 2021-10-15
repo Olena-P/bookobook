@@ -203,12 +203,6 @@ button {
     width: 140px;
   }
   .cards-list {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
     margin-top: 20px;
   }
   .cards-icon {
@@ -223,6 +217,8 @@ button {
     width: 275px;
     padding: 20px;
     margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .card-list-description {
     width: 233px;
