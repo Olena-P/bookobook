@@ -824,6 +824,9 @@ button {
     color: #333399;
     margin-top: 20px;
   }
+  .grey {
+    color: rgba(51, 51, 153, 0.2);
+  }
 }
 
 @media screen and (min-width: 1200px) {
